@@ -77,10 +77,10 @@ docker build -t [IMAGE-NAME]:[IMAGE-TAG] .
 docker build -t demo5-dockerfile-add-vs-copy:v1 .
 
 # Run Docker Container and Verify
-docker run --name my-add-vs-copy-demo -p 8080:80 -d demo5-dockerfile-add-vs-copy:v1
+docker run --name mynginx -p 8080:80 -d mynginx-add-copy:v1
 
 # List Static Files from Docker Container
-docker exec -it my-add-vs-copy-demo ls -lrta /usr/share/nginx/html
+docker exec -it mynginx ls -lrta /usr/share/nginx/html
 
 
 # Access Application

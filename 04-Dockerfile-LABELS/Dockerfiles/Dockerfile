@@ -2,7 +2,8 @@
 FROM nginx:alpine-slim
 
 # Custom Labels
-LABEL maintainer="Kalyan Reddy Daida"  
+LABEL maintainer="Kalyan Reddy Daida"
+LABEL application="Nginx Application"
 LABEL version="1.0"
 LABEL description="A simple Nginx Application"
 # OCI Labels
