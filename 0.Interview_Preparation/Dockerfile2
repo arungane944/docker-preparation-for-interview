@@ -1,0 +1,19 @@
+# write a dockerfile
+
+FROM python:3-12:alpine
+
+LABEL maintainer="ADS Devops Team"
+
+ARG Environment=Dev
+
+ENV ENVIRONMENT=${Environment}
+
+WORKDIR /app
+
+ADD . /app
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "app.py"]
+
+
